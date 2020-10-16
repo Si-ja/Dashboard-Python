@@ -18,14 +18,14 @@ python basedir_init.py
 ```
 Which will prepare a .json file that will allow for the dashboard to navigate through the files in your repository
 4. Run 
-```python
+```shell
 python database_init.py
 ```
 This will take all of the files from the application/excel_files folder, pre-process them and populate a provided so far empty prices.db database. 
 
 5. Navigate to the application/ui folder
 6. Run 
-```python
+```shell
 python app.py
 ```
 This will start the dashboard in your localhost environment.
