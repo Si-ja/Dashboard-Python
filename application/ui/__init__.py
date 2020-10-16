@@ -2,10 +2,12 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html 
 
-from database_requests import DatabaseRequests
-from graph_updater import generate_figure
-from graph_updater import update_figure_range
-from memory_container import MemoryKeeper
+import flask
+
+from ui.database_requests import DatabaseRequests
+from ui.graph_updater import generate_figure
+from ui.graph_updater import update_figure_range
+from ui.memory_container import MemoryKeeper
 
 import pandas as pd 
 import plotly.express as px
@@ -22,7 +24,10 @@ memoryKeeper = MemoryKeeper(dataframe=df, dataframe_name=tables_all[0])
 # Generate a base figure
 fig = generate_figure(dataframe_name=tables_all[0], variables=[columns_available[0]["value"]])
 
-app = dash.Dash(__name__) 
+base_app = flask.Flask(__name__)
+app = dash.Dash(__name__, server=base_app) 
+
+
 app.layout = html.Div(children=[
     html.H1(
         children="Electricity Prices",
@@ -130,7 +135,3 @@ def update_figure(_columns, _tables, new_range):
                                       dataframe_range=new_range)
 
     return new_fig
-
-
-if __name__ == "__main__":
-    app.run_server(debug=True)

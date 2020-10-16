@@ -59,7 +59,10 @@ class DatabaseRequests:
         """
         import json
         base_dir = None
-        with open("../directory.json") as json_file:
+        # This is the only absolute path that creates one of the biggest amount
+        # of issues if the app.py is moved. Treat carefully. .json should be located
+        # Where the app.py is located, from whitch all the executions take place
+        with open("directory.json") as json_file:
             data = json.load(json_file)
             base_dir = data["Directory"]
         return base_dir

@@ -10,7 +10,7 @@ def generate_figure(dataframe_name, variables):
     Output:
         fig - figure that can be plotted.
     """
-    from database_requests import DatabaseRequests
+    from ui.database_requests import DatabaseRequests
     import plotly.graph_objects as go
     import pandas as pd
 
@@ -46,7 +46,7 @@ def update_figure_range(dataframe_name, variables, dataframe_range):
     Output:
         fig - figure that can be plotted.
     """
-    from database_requests import DatabaseRequests
+    from ui.database_requests import DatabaseRequests
     import plotly.graph_objects as go
     import pandas as pd
 
