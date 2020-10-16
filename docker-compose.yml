@@ -1,0 +1,17 @@
+version: "3.7"
+
+services: 
+
+    application:
+        build: ./application
+        container_name: application
+        restart: always
+        expose: 
+            - 8080
+
+    nginx:
+        build: ./nginx
+        container_name: nginx
+        restart: always
+        ports:
+            - "80:80"

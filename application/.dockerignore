@@ -1,0 +1,11 @@
+# Don't include pycache-s
+config_handlers/__pycache__/
+config_handlers/db_management/__pycache__/
+ui/__pycache__/
+
+# Do not include the database straight away as it will get generated
+# REDACTED: NEEDS TO BE CREATED BY HAND IN THE READ-AND-WRITE MODE
+# database/prices.db
+
+# Do not include the directory.json file. It will be generated on the go
+directory.json

@@ -1,0 +1,18 @@
+# Do not include the vscode and virutal environment settings
+.vscode/
+env/
+
+# Do not includ __pycaches__ that form (somehow it became more messy)
+application/config_handlers/__pycache__/
+application/config_handlers/db_management/__pycache__/
+application/ui/__pycache__/
+
+# Do not include the Database files as they have to be generated from scratch
+# An empty array is provided
+# application/database/prices.db
+
+# Do not include the excel files
+*.xlsx
+
+# Do not include my .json files
+*.json
