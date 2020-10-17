@@ -1,19 +1,21 @@
 # Database Preparation
 
-Before work could be done with the dashboard, it is assumed that for this instance there is no database that would hold information similar to the one we have in provided excel files. Therefore, files here help automate creating of the database for such case.
+Before work could be done with the dashboard application, it is assumed that for this instance there is no database that would hold information that could be retrieved, displayed and analyzed. Therefore, the process of preparing a database is automated.
 
-Several things to note:
+Several things to note in order to prepare a working database:
 
-1. Automated population happens using `python3` in order to be consistent with how this project is structured in the first place. Running of such files would have to be done manually, as it is not known beforehand, if all users who will take a look into this use Windows or Linux. Therefore batch and shell files are not developed, however could be helpful.
-2. The database will be constructed on top of `SQLite` in order to maintain a light database for example purposes. As well, because `python3` comes with a pre-exiting module for it. However, afterwards if anything will be put into production - it could be swapped for a larger and more production-friendly one, such as `MySQL`, `MSSQL` or `PostgreSQL`, potentially utilizing the __SQLAlchemy__ module to `python`. Therefore, as all the basic queries will be made with `SQL` based command - swapping should not be of a too complicated nature.
+1. Automated creation happens using `python3` in order to be consistent with how this project is structured in the first place.
+2. The database will be constructed on top of `SQLite` in the given instance in order to maintain a light database for example purposes. As well, because `python3` comes with a pre-exiting module for it.
+3. The databases are populated based on the information from the excel files, that should be present in the `application/excel_files/` path. To use the same files, as have been used to develop the project and for its' specific use case, please refer to the README.md file in the `application/database/` path.
 
 ## How to populate the database
 
 Please follow the following instructions, to get the database created and populated with information.
 
-1. Make sure you have a folder named `excel_files` in your application base directory.
-2. The folder `excel_files` should contain the files provided already. Sources where they are retrieved are indicated in the README.md file located in the database folder.
-3. Make sure that you have isntalled modules, or an environment set up with installed modules, indicated in the requirements.txt file. They are used through out the whole project, so only 1 set up would be required. You can also install all of them by running:
+1. Make sure you have a folder named `excel_files` in your `application` base directory.
+2. The folder `excel_files` should contain only the excel files. The source where they can be retrieved from and in what format saved is indicated in the README.md file located in the database folder. 
+3. Make sure that you have isntalled modules, or an environment set up with installed modules, indicated in the requirements.txt file. You can install them by running:
+
 ```shell
 # Depending on the version of python 2 or 3
 pip install -r requirements.txt
