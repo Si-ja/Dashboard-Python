@@ -67,6 +67,8 @@ The containers are built under names `application` and `nginx`. If you already h
 
 ## Currently known issues that are being worked on to be fixed
 
+- [ ] Major: when excel files are downloaded from the resource provided, they are in the .xls format. The code was tailored to work on .xlsx format. The build of the docker containers fails if you use the default files as is. This is noted as the most essentail issue. 
+
 - [ ] When a database is attempted to be populated, the idea was that the file for the database would be generated automatically as well. Unfortunatelly, when this is attempted, the database sometimes doesn't allow access to it, as it creates only in the __read-only__ format. The current solution applied: the `.db` file is provided as an empty template with the needed permissions set up, to function properly. Still looking for proper ways to optimize this.
 
 - [X] Dockerization so far failed. The application wouldn't launch properly, but provide no clear erros why. The only trace of the issue was the __Internal Server Error__ message when the `localhost:80` would be accessed.
