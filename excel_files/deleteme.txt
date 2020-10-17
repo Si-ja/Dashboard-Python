@@ -1,7 +1,0 @@
-=========
-DELETE ME
-
-This is a place holder file, that should be deleted before the project is ran.
-
-DELETE ME
-=========
