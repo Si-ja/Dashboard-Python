@@ -1,6 +1,6 @@
 # Database
 
-Navigate first to the following path: https://github.com/Si-ja/Dashboard-Python/blob/main/application/config_handlers/db_management/README.md and get familiarized with the documentation on it. It should give a more clear explanation to what the next steps that are done here mean.
+Navigate first to the following path: [How the database is prepared](https://github.com/Si-ja/Dashboard-Python/blob/main/application/config_handlers/db_management/README.md) and get familiarized with the documentation on it. It should give a more clear explanation to what the next steps that are done here mean.
 
 The databas is recommended to be generated with the `database_init.py` file, located in the root of the `application` directory. It will read information from the excel files, placed in the `application/excel_files/` directory, clean them, and upload into an SQLite database that will be located here. 
 
