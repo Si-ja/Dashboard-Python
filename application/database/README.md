@@ -14,7 +14,7 @@ Search under criteria:
     - Elspot Prices (in the dropdown box for Filter by category)
     - Hourly        (in the dropdown box for filter by resolution)
         - Originally files retrieved were used with an indication `_EUR` at the end of their names.
-        - Original files had an extension .xlsx, but hopefully should work with the .xls as well.
+        - Original files had an extension .xlsx, but sadly do not work with just the default .xls, if you download them as is. This is being worked on.
 
 Retrieve files for the years that interest you. Store them in the aforementioned `application/excel_files/` path. These files are providing information on electrical prices Day-Ahead for the region of Europe.
 
