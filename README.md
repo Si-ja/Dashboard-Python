@@ -29,23 +29,19 @@ If you decide to run on your own machine do the following:
 1. Get familiar with the documentation by going through the following README.md files: [How the database is prepared](https://github.com/Si-ja/Dashboard-Python/tree/main/application/config_handlers/db_management), [How to prepare the database before running the application](https://github.com/Si-ja/Dashboard-Python/tree/main/application/database)
 2. Download the repository
 3. Make all of the needed preparations, indicated in the step 1.
-4. Install all the required modules to python indicated in the `application/requirements.txt`
-5. Run 
+4. Navigate to the `application/` folder. All of the following prepareation will be done from here. Install all the required modules to python indicated in the `application/requirements.txt`, if needed in a new dedicated virtual environment.
+5. To prepare a .json file that will allow for the dashboard to navigate through the folder on your computer it is in (as the database folder, excel files and other things are broken into components...and I didn't use relatives paths due to shortage of time, which I am aware would have been much better in the long run), run 
 ```shell
 python basedir_init.py
 ```
-Which will prepare a .json file that will allow for the dashboard to navigate through the files in your repository
-6. Run 
+6. To take all of the files from the `application/excel_files/` path, pre-process them and populate a provided so far empty prices.db database, run: 
 ```shell
 python database_init.py
 ```
-This will take all of the files from the `application/excel_files/` path, pre-process them and populate a provided so far empty prices.db database. 
-7. Navigate to the `application/ui/` folder
-8. Run 
+7. Finally, run the following to start the application on the localhost 5000.
 ```shell
 python app.py
 ```
-This will start the dashboard in your localhost environment. It should start on the port `8050`.
 
 ### Option 2 - In a Docker Container
 
