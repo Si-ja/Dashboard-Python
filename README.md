@@ -47,9 +47,7 @@ pip install -r requirements.txt
 python basedir_init.py
 ```
 ~~7. Populate the `Dashboard-Python/application/excel_files/` folder with the data you retrieved from [Nord Pool](https://www.nordpoolgroup.com/historical-market-data/). Originally, the files with which work was done were called `elspot-prices_2018_hourly_eur.xls.xlsx`, `elspot-prices_2019_hourly_eur.xls.xlsx`, `elspot-prices_2020_hourly_eur.xls.xlsx`. Unfortunatelly, in other formats, besides `.xlsx` the files are not read properly. This is noted as an issue, and is being worked on.~~
-
-~~8. Delete the `DELETEME.txt` file in the `Dashboard-Python/application/excel_files/` path.
-
+~~8. Delete the `DELETEME.txt` file in the `Dashboard-Python/application/excel_files/` path.~~
 9. Populate an SQLite database, that is located in the `Dashboard-Python/application/database/` (do not navigate there, stay in the terminal at `Dashboard-Python/application/`) by running the following command:
 ```shell
 python database_init.py
@@ -68,8 +66,7 @@ __Prerequisits:__ It is assmed you have `docker` and `docker-compose` installed 
 
 1. Download/Clone the repository.
 2. Navigate to the `/application/` folder.
-~~3. Populate the `Dashboard-Python/application/excel_files/` folder with the data you retrieved from [Nord Pool](https://www.nordpoolgroup.com/historical-market-data/). Originally, the files with which work was done were called `elspot-prices_2018_hourly_eur.xls.xlsx`, `elspot-prices_2019_hourly_eur.xls.xlsx`, `elspot-prices_2020_hourly_eur.xls.xlsx`. Unfortunatelly, in other formats, besides `.xlsx` the files are not read properly. This is noted as an issue, and is being worked on.
-
+~~3. Populate the `Dashboard-Python/application/excel_files/` folder with the data you retrieved from [Nord Pool](https://www.nordpoolgroup.com/historical-market-data/). Originally, the files with which work was done were called `elspot-prices_2018_hourly_eur.xls.xlsx`, `elspot-prices_2019_hourly_eur.xls.xlsx`, `elspot-prices_2020_hourly_eur.xls.xlsx`. Unfortunatelly, in other formats, besides `.xlsx` the files are not read properly. This is noted as an issue, and is being worked on.~~
 4. Navigate to the `Dashboard-Python/` folder. 
 5. Open the terminal from the said path.
 6. Build and server 2 docker containers, that will allow for interactivity with the developed Dashboard by running:
