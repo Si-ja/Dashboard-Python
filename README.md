@@ -29,33 +29,43 @@ Please follow the steps to make the dashboar work on your computer (originally t
 __Prerequisits:__ It is assumed you have python and pip installed on your computer already. 
 
 1. Download/Clone the repository.
+
 2. Navigate to the `Dashboard-Python/application/` folder.
+
 3. Open the terminal in the given folder and execute the following command to set up a new working environment:
 ```shell
 python3 -m venv env
 ```
+
 4. Make sure the new environment is selected for opperations:
 ```shell
 source env/bin/activate
 ```
+
 5. Install all the needed dependencies for python through:
 ```
 pip install -r requirements.txt
 ```
+
 6. To generate a .json file (it will appear in your Dashboard-Python/application/` folder that will help the dashboard navigate between the new database that will be generated from scratch and its UI, run:
 ```shell
 python basedir_init.py
 ```
+
 ~~7. Populate the `Dashboard-Python/application/excel_files/` folder with the data you retrieved from [Nord Pool](https://www.nordpoolgroup.com/historical-market-data/). Originally, the files with which work was done were called `elspot-prices_2018_hourly_eur.xls.xlsx`, `elspot-prices_2019_hourly_eur.xls.xlsx`, `elspot-prices_2020_hourly_eur.xls.xlsx`. Unfortunatelly, in other formats, besides `.xlsx` the files are not read properly. This is noted as an issue, and is being worked on.~~
+
 ~~8. Delete the `DELETEME.txt` file in the `Dashboard-Python/application/excel_files/` path.~~
+
 9. Populate an SQLite database, that is located in the `Dashboard-Python/application/database/` (do not navigate there, stay in the terminal at `Dashboard-Python/application/`) by running the following command:
 ```shell
 python database_init.py
 ```
+
 10. Run the following to start the application:
 ```shell
 python app.py
 ```
+
 11. Keep the terminal opened and open your browser of choice and navigate to the `localhost:5000`. You should be able to interact with the newly created dashboard.
 
 __Additional:__ To stop the application running, either close the terminal or press `Ctrl+C` in the terminal.
@@ -65,14 +75,20 @@ __Additional:__ To stop the application running, either close the terminal or pr
 __Prerequisits:__ It is assmed you have `docker` and `docker-compose` installed on your computer.
 
 1. Download/Clone the repository.
+
 2. Navigate to the `/application/` folder.
+
 ~~3. Populate the `Dashboard-Python/application/excel_files/` folder with the data you retrieved from [Nord Pool](https://www.nordpoolgroup.com/historical-market-data/). Originally, the files with which work was done were called `elspot-prices_2018_hourly_eur.xls.xlsx`, `elspot-prices_2019_hourly_eur.xls.xlsx`, `elspot-prices_2020_hourly_eur.xls.xlsx`. Unfortunatelly, in other formats, besides `.xlsx` the files are not read properly. This is noted as an issue, and is being worked on.~~
+
 4. Navigate to the `Dashboard-Python/` folder. 
+
 5. Open the terminal from the said path.
+
 6. Build and server 2 docker containers, that will allow for interactivity with the developed Dashboard by running:
 ```shell
 docker-compose up --build
 ```
+
 7. Open your browser of choice and navigate to the `localhost:80`. 
 
 __Additional:__ Do not forget the close and if required delete the ruinning containers, after you are done working with them.
