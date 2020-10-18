@@ -76,7 +76,7 @@ __Prerequisites:__ It is assmed you have `docker` and `docker-compose` installed
 
 1. Download/Clone the repository.
 
-2. Navigate to the `/application/` folder.
+~~2. Navigate to the `/application/` folder.~~
 
 ~~3. Populate the `Dashboard-Python/application/excel_files/` folder with the data you retrieved from [Nord Pool](https://www.nordpoolgroup.com/historical-market-data/). Originally, the files with which work was done were called `elspot-prices_2018_hourly_eur.xls.xlsx`, `elspot-prices_2019_hourly_eur.xls.xlsx`, `elspot-prices_2020_hourly_eur.xls.xlsx`. Unfortunatelly, in other formats, besides `.xlsx` the files are not read properly. This is noted as an issue, and is being worked on.~~
 
