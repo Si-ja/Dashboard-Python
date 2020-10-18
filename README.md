@@ -4,7 +4,7 @@ This is a small dashboard built with python and Dash, using SQLite as a database
 
 ## What is this application about
 
-It allows for an interactive visualization of information that represent electrical Day-Ahead prices in Europe per hour. Originally information has been retrieved from [Nord Pool](https://www.nordpoolgroup.com/historical-market-data/). To work with this dashboard you will have to retrieve the same information from the said source.
+It allows for an interactive visualization of information that represent electricity Day-Ahead prices in Europe per hour. Originally information has been retrieved from [Nord Pool](https://www.nordpoolgroup.com/historical-market-data/). To work with this dashboard you will have to retrieve the same information from the said source.
 
 You can see few examples of how the Dashboard currently looks.
 
