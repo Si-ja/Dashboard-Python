@@ -46,7 +46,7 @@ pip install -r requirements.txt
 ```shell
 python basedir_init.py
 ```
-7. Populate the `Dashboard-Python/application/excel_files/` folder with the data you retrieved from [Nord Pool](https://www.nordpoolgroup.com/historical-market-data/). Originally, the files with which work was done were called `elspot-prices_2018_hourly_eur.xls.xlsx`, `elspot-prices_2019_hourly_eur.xls.xlsx`, `elspot-prices_2020_hourly_eur.xls.xlsx`. Unfortunatelly, in other formats, beside `.xlsx` the files are not read properly. This is noted as an issue, and is being worked on.
+7. Populate the `Dashboard-Python/application/excel_files/` folder with the data you retrieved from [Nord Pool](https://www.nordpoolgroup.com/historical-market-data/). Originally, the files with which work was done were called `elspot-prices_2018_hourly_eur.xls.xlsx`, `elspot-prices_2019_hourly_eur.xls.xlsx`, `elspot-prices_2020_hourly_eur.xls.xlsx`. Unfortunatelly, in other formats, besides `.xlsx` the files are not read properly. This is noted as an issue, and is being worked on.
 8. Delete the `DELETEME.txt` file in the `Dashboard-Python/application/excel_files/` path.
 9. Populate an SQLite database, that is located in the `Dashboard-Python/application/database/` (do not navigate there, stay in the terminal at `Dashboard-Python/application/`) by running the following command:
 ```shell
@@ -66,23 +66,14 @@ __Prerequisits:__ It is assmed you have `docker` and `docker-compose` installed 
 
 1. Download/Clone the repository.
 2. Navigate to the `/application/` folder.
-3. Populate the `Dashboard-Python/application/excel_files/` folder with the data you retrieved from [Nord Pool](https://www.nordpoolgroup.com/historical-market-data/). Originally, the files with which work was done were called `elspot-prices_2018_hourly_eur.xls.xlsx`, `elspot-prices_2019_hourly_eur.xls.xlsx`, `elspot-prices_2020_hourly_eur.xls.xlsx`. Unfortunatelly, in other formats, beside `.xlsx` the files are not read properly. This is noted as an issue, and is being worked on.
+3. Populate the `Dashboard-Python/application/excel_files/` folder with the data you retrieved from [Nord Pool](https://www.nordpoolgroup.com/historical-market-data/). Originally, the files with which work was done were called `elspot-prices_2018_hourly_eur.xls.xlsx`, `elspot-prices_2019_hourly_eur.xls.xlsx`, `elspot-prices_2020_hourly_eur.xls.xlsx`. Unfortunatelly, in other formats, besides `.xlsx` the files are not read properly. This is noted as an issue, and is being worked on.
 4. Navigate to the `Dashboard-Python/` folder. 
 5. Open the terminal from the said path.
-6. Build and server 2 docker containers, that will allow for interactivity with the developed Dashboard:
+6. Build and server 2 docker containers, that will allow for interactivity with the developed Dashboard by running:
 ```shell
 docker-compose up --build
 ```
 7. Open your browser of choice and navigate to the `localhost:80`. 
-
-2. Download the repository
-3. Make all of the needed preparations, indicated in the step 1.
-4. Make sure you have 
-5. Run the following command, while being located in the very root folder of the project, to build the continaer for the instance of the application and for the nginx (the containers also will automatically be served):
-```shell
-
-```
-6. Access `localhost:80`. You should be able to interact with the application. You should be able to interact with the newly created dashboard.
 
 __Additional:__ Do not forget the close and if required delete the ruinning containers, after you are done working with them.
 
