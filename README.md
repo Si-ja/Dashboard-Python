@@ -128,6 +128,8 @@ from ui import base_app as application
 
 - [ ] Make the Dashboard look more pretty.
 
+- [ ] Some of the original excel files do not have the fataframe fully populated or fully populated for some countries. As a result - the informatino displayed comes out distorted for such countries, if the RangeSlider is altered, from the original state it is in. Needs to be looked in into how the datafreame is re-formated because of the slider.
+
 - [ ] Noticed that the time range available for specification on the bottom of the dashboard does not change depending on the table provided and only takes the full range of the initial table that was loaded. In the given context it is not a big issue, as in all cases the data ranges are planned to be of 1 years length. However, this behaviour is not desirable and should be fixed.
 
 - [X] Fix the grammar in the README.md files. Some instances of text look quite poor due to writing them in a rush.
