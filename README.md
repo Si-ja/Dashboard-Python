@@ -16,7 +16,7 @@ You can change the tables selected, and the column values.
 
 ![](https://github.com/Si-ja/Dashboard-Python/blob/main/application/visuals/AddingCountries.png "Add more variables")
 
-You can also change the range - increase or decrease it, in respect to how many data points there are. So far the renge was tailored to fit the sequential nature of the data used in the project.
+You can also change the range - increase or decrease it, in respect to how many data points there are. So far the range was tailored to fit the sequential nature of the data used in the project.
 
 ![](https://github.com/Si-ja/Dashboard-Python/blob/main/application/visuals/ChangingRange.png "Change Range")
 
@@ -24,7 +24,7 @@ You can also change the range - increase or decrease it, in respect to how many 
 
 ### Option 1 - On your Personal Machine
 
-Please follow the steps to make the dashboar work on your computer (originally st up was done on Linux and might slightly differ from the Windows one):
+Please follow the steps to make the dashboar work on your computer (originally the set up was done on Linux and might slightly differ from the Windows one):
 
 __Prerequisits:__ It is assumed you have python and pip installed on your computer already. 
 
