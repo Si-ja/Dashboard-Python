@@ -1,7 +1,0 @@
-=========
-DELETE ME
-
-Delete this file after you download the repository. This is a simple place holder.
-
-DELETE ME
-=========
