@@ -26,7 +26,7 @@ You can also change the range - increase or decrease it, in respect to how many 
 
 Please follow the steps to make the dashboar work on your computer (originally the set up was done on Linux and might slightly differ from the Windows one):
 
-__Prerequisits:__ It is assumed you have python and pip installed on your computer already. 
+__Prerequisites:__ It is assumed you have python and pip installed on your computer already. 
 
 1. Download/Clone the repository.
 
@@ -72,7 +72,7 @@ __Additional:__ To stop the application running, either close the terminal or pr
 
 ### Option 2 - In a Docker Container (Please read the WARNING section of this instruction before performing the set up).
 
-__Prerequisits:__ It is assmed you have `docker` and `docker-compose` installed on your computer.
+__Prerequisites:__ It is assmed you have `docker` and `docker-compose` installed on your computer.
 
 1. Download/Clone the repository.
 
