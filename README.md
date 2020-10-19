@@ -30,7 +30,7 @@ __Prerequisites:__ It is assumed you have python and pip installed on your compu
 
 1. Download/Clone the repository.
 
-2. Navigate to the `Dashboard-Python/application/` folder.
+2. Navigate to the `Dashboard-Python/` folder.
 
 3. Open the terminal in the given folder and execute the following command to set up a new working environment:
 ```shell
@@ -42,7 +42,7 @@ python3 -m venv env
 source env/bin/activate
 ```
 
-5. Install all the needed dependencies for python through:
+5. Navigate to the `Dashboard-Python/application/` path and install all the needed dependencies for python through:
 ```
 pip install -r requirements.txt
 ```
